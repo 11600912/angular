@@ -1,0 +1,40 @@
+body {
+    background-color: lightgray;
+}
+header.school-name{
+    float:left;
+    width:100%;
+    background-color:lightgray;
+    height:60px;
+    
+}
+header{
+    float:left;
+    width:100%;
+    background-color:gray;
+    height:60px;
+}
+.ul.navigation{
+    margin:auto;
+    padding:10px;
+}
+
+ul.navigation li{
+    list-style:none;
+    float:right;
+}
+
+ul.navigation a{
+    color:#FFF;
+    text-decoration:none;
+    font-size:20px;
+    padding:18px 20px;
+    display:inline-block;
+}
+.footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    font-size: 10px;
+    padding:10px 10px;
+    position: fixed;
+}
