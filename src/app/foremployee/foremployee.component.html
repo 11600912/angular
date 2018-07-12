@@ -1,3 +1,51 @@
-<p>
-  foremployee works!
-</p>
+<h2><b>Register</b></h2>
+<form (submit)="onRegisterSubmit()">
+    <div class="form-group">
+        <label>FULL Name</label>
+        <input type="text" [(ngModel)]="name" name="name"class="form-control">
+      </div>
+    <div class="form-group">
+        <label>Mother Name</label>
+        <input type="text"[(ngModel)]="mothername"name="mothername"class="form-control">
+      </div>
+      <div class="form-group">
+          <label>Father Name</label>
+          <input type="text"[(ngModel)]="fathername"name="fathername"class="form-control">
+        </div>
+      <div class="form-group">
+          <label>Email</label>
+          <input type="text"[(ngModel)]="email"name="email"class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Gender</label><br>
+            <input type="radio"name="gender"value="male" checked/>Male<br> 
+            <input type="radio"name="gender"value="female"/>Female
+          </div>
+          
+        <div class="form-group">
+            <label>Relationship Status</label><br>
+            <input type="radio"name="married"value="Married" checked />Married<br> 
+            <input type="radio"name="single"value="Single">single
+        </div>
+        <label>Qualifications:</label>
+        <select>
+          <option value="dffe">B.Tech</option>
+          <option value="dfef">MBA</option>
+          <option value="sdd">PHD</option>
+          <option value="edd">B.COM</option>
+          <option value="grg">MCA</option>
+          <option value="grg">M.COM</option>
+          <option value="grg">B.ED</option>
+          <option value="eer" selected>M.tech</option>
+        </select>
+        <div class="form-group">
+            <label>Phone number</label>
+            <input type="number"[(ngModel)]="phnumber"name="phnumber"class="form-control">
+          </div>    
+      <div class="form-group">
+          <label>Experience</label>
+          <input type="text"[(ngModel)]="exp"name="exp"class="form-control">
+        </div>
+        <input type="submit"class="btn btn-primary"value="Submit">    
+</form>
+  

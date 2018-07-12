@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
 import { StudentloginComponent } from './studentlogin/studentlogin.component';
@@ -16,6 +17,7 @@ import { MissionComponent } from './mission/mission.component';
 import { RulesComponent } from './rules/rules.component';
 import { TransportComponent } from './transport/transport.component';
 import { RequirementsComponent } from './requirements/requirements.component';
+import { ValidateService } from './services/validate.service';
 
 
 @NgModule({
@@ -39,9 +41,10 @@ import { RequirementsComponent } from './requirements/requirements.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ValidateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
