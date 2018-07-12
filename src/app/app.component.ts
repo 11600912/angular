@@ -1,8 +1,4 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-
-
 @Component({
   selector: 'app-root',
   templateUrl:`./app.component.html`,
@@ -11,10 +7,10 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   public title={
-    textAlign:"center",
-    color:"black",
+    color:"blue",
     fontFamily:"verdana",
     margin:"5px",
-    padding:"3px"
-  }
+    padding:"25px 25px",
+    textAlign:"center"
+}
 }
