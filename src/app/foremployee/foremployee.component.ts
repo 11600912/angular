@@ -12,6 +12,7 @@ export class ForemployeeComponent implements OnInit {
   email:String;
   exp:string;
   phnumber:number;
+  password:String;
 
   constructor(private validateService:ValidateService) { }
 
@@ -19,12 +20,13 @@ export class ForemployeeComponent implements OnInit {
   }
   onRegisterSubmit(){
     const user ={
-      name: this.name,
+      name:this.name,
       mothername:this.mothername, 
       fathername:this.fathername,
       email:this.email,
       exp:this.exp,
       phnumber:this.phnumber,
+      
 
     }
     if(!this.validateService.validateRegister(user)){

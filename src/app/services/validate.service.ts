@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { isUndefined } from 'util';
+// import { isUndefined } from 'util';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +17,6 @@ export class ValidateService {
    validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
-}
+    }
 
 }

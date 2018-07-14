@@ -18,8 +18,7 @@ import { RulesComponent } from './rules/rules.component';
 import { TransportComponent } from './transport/transport.component';
 import { RequirementsComponent } from './requirements/requirements.component';
 import { ValidateService } from './services/validate.service';
-
-
+import { HttpModule } from '@angular/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +41,8 @@ import { ValidateService } from './services/validate.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [ValidateService],
   bootstrap: [AppComponent]

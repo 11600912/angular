@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ValidateService } from '../services/validate.service';
-import { FlashMessagesService } from 'angular2-flash-messages';
+// import { FlashMessagesService } from 'angular2-flash-messages';
 @Component({
   selector: 'app-forstudent',
-  templateUrl: './forstudent.component.html',
+   templateUrl: './forstudent.component.html',
   styleUrls: ['./forstudent.component.css']
 })
 export class ForstudentComponent implements OnInit {
@@ -26,8 +26,7 @@ export class ForstudentComponent implements OnInit {
       email:this.email,
       phnumber:this.phnumber,
       password:this.password
-
-}
+    }
 if(!this.validateService.validateRegister(user)){
   console.log('please fill the all details');
   return false;
